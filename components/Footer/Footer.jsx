@@ -1,15 +1,12 @@
-/*eslint-disable*/
-import React from "react";
-// nodejs library to set properties for components
-import PropTypes from "prop-types";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-import { List, ListItem, withStyles } from "@material-ui/core";
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import { List, ListItem, withStyles } from '@material-ui/core';
+import '@fortawesome/fontawesome-free/css/all.css';
 
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+import Favorite from '@material-ui/icons/Favorite';
 
-import footerStyle from "design-system/assets/jss/material-kit-react/components/footerStyle.jsx";
+import footerStyle from 'design-system/assets/jss/material-kit-react/components/footerStyle.jsx';
 
 function Footer({ ...props }) {
   const { classes, whiteFont } = props;
@@ -26,55 +23,30 @@ function Footer({ ...props }) {
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Oreochip
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
-            </ListItem>
+            {(props.icons || []).map(({ icon, url }, i) => (
+              <ListItem className={classes.inlineBlock}>
+                <a
+                  href={url}
+                  className={classes.block}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className={icon} style={{fontSize: 20}} />
+                </a>
+              </ListItem>
+            ))}
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          Made with <Favorite className={classes.icon} /> by{' '}
           <a
             href="https://www.creative-tim.com"
             className={aClasses}
             target="_blank"
+            rel="noopener noreferrer"
           >
             Oreochip
-          </a>{" "}
-          for a better web.
+          </a>
         </div>
       </div>
     </footer>
