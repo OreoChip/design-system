@@ -65,15 +65,17 @@ class Header extends React.Component {
       leftLinks,
       brand,
       fixed,
-      absolute
+      absolute,
+      bioRhyme
     } = this.props;
+    debugger;
     const appBarClasses = classNames({
       [classes.appBar]: true,
       [classes[color]]: color,
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-    const brandComponent = <Button className={classes.title}>{brand}</Button>;
+    const brandComponent = <Button className={classNames(classes.title, bioRhyme ? classes.bioRhymeFont : '')}>{brand}</Button>;
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
@@ -162,7 +164,8 @@ Header.propTypes = {
       "rose",
       "dark"
     ]).isRequired
-  })
+  }),
+  titleClass: PropTypes.string
 };
 
 export default withStyles(headerStyle)(Header);

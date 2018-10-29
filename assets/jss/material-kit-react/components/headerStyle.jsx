@@ -145,6 +145,10 @@ const headerStyle = {
     paddingRight: "0px",
     paddingLeft: "0",
     ...transition
+  },
+  bioRhymeFont: {
+    fontFamily: "'BioRhyme', serif",
+    fontSize: 30
   }
 };
 
