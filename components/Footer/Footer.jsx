@@ -45,7 +45,7 @@ function Footer({ ...props }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Oreochip
+            OreoChip
           </a>
         </div>
       </div>
