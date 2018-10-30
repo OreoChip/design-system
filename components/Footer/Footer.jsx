@@ -38,15 +38,7 @@ function Footer({ ...props }) {
           </List>
         </div>
         <div className={classes.right}>
-          Made with <Favorite className={classes.icon} /> by{' '}
-          <a
-            href="https://www.creative-tim.com"
-            className={aClasses}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            OreoChip
-          </a>
+          {props.rightText}
         </div>
       </div>
     </footer>

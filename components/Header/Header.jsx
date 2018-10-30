@@ -68,7 +68,6 @@ class Header extends React.Component {
       absolute,
       bioRhyme
     } = this.props;
-    debugger;
     const appBarClasses = classNames({
       [classes.appBar]: true,
       [classes[color]]: color,
