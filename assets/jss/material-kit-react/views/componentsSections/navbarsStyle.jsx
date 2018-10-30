@@ -1,6 +1,8 @@
 import { container, title } from "design-system/assets/jss/material-kit-react.jsx";
 import headerLinksStyle from "design-system/assets/jss/material-kit-react/components/headerLinksStyle.jsx";
-
+import {
+  defaultFont
+} from "design-system/assets/jss/material-kit-react.jsx";
 const navbarsStyle = theme => ({
   section: {
     padding: "70px 0",
@@ -51,6 +53,17 @@ const navbarsStyle = theme => ({
     top: "4px",
     borderRadius: "50%",
     marginLeft: "5px"
+  },
+  mainText: {
+    fontSize: 35,
+    fontWeight: "bold"
+  },
+  subText: {
+    fontSize: 15
+  },
+  brandContainter: {
+    width: 200,
+    textAlign: "center"
   }
 });
 
