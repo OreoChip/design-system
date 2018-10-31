@@ -62,8 +62,7 @@ const navbarsStyle = theme => ({
     fontSize: 15
   },
   brandContainter: {
-    width: 200,
-    textAlign: "center"
+    width: 200
   }
 });
 
