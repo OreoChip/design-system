@@ -1,8 +1,5 @@
 import { container, title } from "design-system/assets/jss/material-kit-react.jsx";
 import headerLinksStyle from "design-system/assets/jss/material-kit-react/components/headerLinksStyle.jsx";
-import {
-  defaultFont
-} from "design-system/assets/jss/material-kit-react.jsx";
 const navbarsStyle = theme => ({
   section: {
     padding: "70px 0",

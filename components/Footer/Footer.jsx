@@ -4,18 +4,12 @@ import classNames from 'classnames';
 import { List, ListItem, withStyles } from '@material-ui/core';
 import '@fortawesome/fontawesome-free/css/all.css';
 
-import Favorite from '@material-ui/icons/Favorite';
-
 import footerStyle from 'design-system/assets/jss/material-kit-react/components/footerStyle.jsx';
 
 function Footer({ ...props }) {
   const { classes, whiteFont } = props;
   const footerClasses = classNames({
     [classes.footer]: true,
-    [classes.footerWhiteFont]: whiteFont
-  });
-  const aClasses = classNames({
-    [classes.a]: true,
     [classes.footerWhiteFont]: whiteFont
   });
   return (
