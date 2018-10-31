@@ -72,7 +72,6 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-    // const brandComponent = <Button className={classNames(classes.title, bioRhyme ? classes.bioRhymeFont : '')}>{brand}</Button>;
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>

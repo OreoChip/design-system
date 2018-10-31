@@ -59,7 +59,8 @@ const navbarsStyle = theme => ({
     fontSize: 15
   },
   brandContainter: {
-    width: 200
+    width: 200,
+    cursor: 'pointer'
   }
 });
 
