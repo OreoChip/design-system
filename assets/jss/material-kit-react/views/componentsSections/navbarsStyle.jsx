@@ -60,7 +60,8 @@ const navbarsStyle = theme => ({
   },
   brandContainter: {
     width: 200,
-    cursor: 'pointer'
+    cursor: 'pointer',
+    color: '#0a0a2f'
   }
 });
 
