@@ -64,7 +64,8 @@ class Header extends React.Component {
       leftLinks,
       brand,
       fixed,
-      absolute
+      absolute,
+      customClasses
     } = this.props;
     const appBarClasses = classNames({
       [classes.appBar]: true,
@@ -73,7 +74,7 @@ class Header extends React.Component {
       [classes.fixed]: fixed
     });
     return (
-      <AppBar className={appBarClasses}>
+      <AppBar className={`${appBarClasses} ${customClasses.appBar}`}>
         <Toolbar className={classes.container}>
           {leftLinks !== undefined ? brand : null}
           <div className={classes.flex}>
@@ -120,7 +121,8 @@ class Header extends React.Component {
 }
 
 Header.defaultProp = {
-  color: "white"
+  color: "white",
+  customClasses: {}
 };
 
 Header.propTypes = {
@@ -161,7 +163,8 @@ Header.propTypes = {
       "dark"
     ]).isRequired
   }),
-  titleClass: PropTypes.string
+  titleClass: PropTypes.string,
+  customClasses: PropTypes.object
 };
 
 export default withStyles(headerStyle)(Header);
