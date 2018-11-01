@@ -56,10 +56,10 @@ const navbarsStyle = theme => ({
     fontWeight: "bold"
   },
   subText: {
-    fontSize: 15
+    fontSize: 18
   },
   brandContainter: {
-    width: 200,
+    width: 250,
     cursor: 'pointer',
     color: '#0a0a2f'
   }
