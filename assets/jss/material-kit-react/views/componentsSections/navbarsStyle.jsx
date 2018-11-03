@@ -59,7 +59,6 @@ const navbarsStyle = theme => ({
     fontSize: 18
   },
   brandContainter: {
-    width: 250,
     cursor: 'pointer',
     color: '#0a0a2f'
   }
