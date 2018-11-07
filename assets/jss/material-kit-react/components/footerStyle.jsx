@@ -63,11 +63,11 @@ const footerStyle = {
   },
   rightLink: {
     textDecoration: "none",
-    fontSize: "1.2rem",
     color: "#6a6a70"
   },
   rightBottom: {
-    color: "#6a6a70"
+    color: "#6a6a70",
+    fontSize: 10
   }
 };
 export default footerStyle;

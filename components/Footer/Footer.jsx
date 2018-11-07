@@ -34,7 +34,7 @@ function Footer({ ...props }) {
         <div className={classes.right}>
           <div className={classes.rightFlex}>
             <div>{props.rightText}</div>
-            <div className={classes.rightBottom}>Designed By <a className={classes.rightLink} href={props.rightLink.url}>{props.rightLink.text}</a></div>
+            <div className={classes.rightBottom}>Designed By <a className={classes.rightLink} href={props.rightLink.url} target={'_blank'}>{props.rightLink.text}</a></div>
           </div>
         </div>
       </div>
