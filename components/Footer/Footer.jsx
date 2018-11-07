@@ -25,14 +25,17 @@ function Footer({ ...props }) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className={icon} style={{fontSize: 20}} />
+                  <i className={icon} style={{ fontSize: 20 }} />
                 </a>
               </ListItem>
             ))}
           </List>
         </div>
         <div className={classes.right}>
-          {props.rightText}
+          <div className={classes.rightFlex}>
+            <div>{props.rightText}</div>
+            <div className={classes.rightBottom}>Designed By <a className={classes.rightLink} href={props.rightLink.url}>{props.rightLink.text}</a></div>
+          </div>
         </div>
       </div>
     </footer>

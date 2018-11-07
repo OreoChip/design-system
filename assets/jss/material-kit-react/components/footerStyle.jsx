@@ -10,7 +10,7 @@ const footerStyle = {
     borderRadius: "3px",
     textDecoration: "none",
     position: "relative",
-    display: "block"
+    display: "block",
   },
   left: {
     float: "left!important",
@@ -19,7 +19,8 @@ const footerStyle = {
   right: {
     padding: "15px 0",
     margin: "0",
-    float: "right!important"
+    float: "right!important",
+    fontSize: "1.2rem"
   },
   footer: {
     padding: "0.9375rem 0",
@@ -47,13 +48,26 @@ const footerStyle = {
   inlineBlock: {
     display: "inline-block",
     padding: "0px",
-    width: "auto"
+    width: "auto",
   },
   icon: {
-    width: "18px",
-    height: "18px",
+    width: "15px",
+    height: "15px",
     position: "relative",
-    top: "3px"
+    top: "3px",
+  },
+  rightFlex: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start"
+  },
+  rightLink: {
+    textDecoration: "none",
+    fontSize: "1.2rem",
+    color: "#6a6a70"
+  },
+  rightBottom: {
+    color: "#6a6a70"
   }
 };
 export default footerStyle;
